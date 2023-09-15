@@ -1,0 +1,66 @@
+[
+    {
+      "image": "https://i.ibb.co/RSMz8mf/download.jpg",
+      "title": "Introduction to Computer Science",
+      "credit": 3,
+      "course details": "This course provides a comprehensive introduction to computer science, covering fundamental concepts such as algorithms, data structures, programming languages, and problem-solving techniques.",
+      "price": 299
+    },
+    {
+      "image": "https://i.ibb.co/D7yGyWZ/download-1.jpg",
+      "title": "Web Development Fundamentals",
+      "credit": 4,
+      "course details": "Learn the basics of web development, including HTML, CSS, and JavaScript. Build your first web applications and websites in this hands-on course.",
+      "price": 349
+    },
+    {
+      "image": "https://i.ibb.co/KGPgCX6/download-2.jpg",
+      "title": "Database Management",
+      "credit": 3,
+      "course details": "Explore the principles of database design, SQL, and database administration. Learn how to create and manage databases for various applications.",
+      "price": 279
+    },
+    {
+      "image": "https://i.ibb.co/yfQCHtK/download-3.jpg",
+      "title": "Machine Learning and Artificial Intelligence",
+      "credit": 4,
+      "course details": "Delve into the fascinating world of machine learning and AI. Understand algorithms, neural networks, and apply AI techniques to real-world problems.",
+      "price": 399
+    },
+    {
+      "image": "https://i.ibb.co/XCVQTxz/download-4.jpg",
+      "title": "Cybersecurity Fundamentals",
+      "credit": 3,
+      "course details": "Enhance your understanding of cybersecurity. Learn about encryption, network security, ethical hacking, and how to protect against cyber threats.",
+      "price": 299
+    },
+    {
+      "image": "https://i.ibb.co/YRQjq8X/download-5.jpg",
+      "title": "Software Engineering Principles",
+      "credit": 4,
+      "course details": "Master software engineering principles, including software design, testing, and development methodologies. Build scalable and maintainable software.",
+      "price": 349
+    },
+    {
+      "image": "https://i.ibb.co/VMD5h0m/download-6.jpg",
+      "title": "Cloud Computing and Infrastructure",
+      "credit": 3,
+      "course details": "Gain expertise in cloud computing and infrastructure management. Explore cloud platforms, virtualization, and cloud security.",
+      "price": 299
+    },
+    {
+      "image": "https://i.ibb.co/smRnnrr/download-7.jpg",
+      "title": "Mobile App Development",
+      "credit": 4,
+      "course details": "Learn how to develop mobile applications for iOS and Android platforms. Cover app design, user interfaces, and app deployment.",
+      "price": 349
+    },
+    {
+      "image": "https://example.com/course9.jpg",
+      "title": "Data Science and Analytics",
+      "credit": 4,
+      "course details": "Discover the world of data science and analytics. Analyze data, create data visualizations, and gain insights to support decision-making.",
+      "price": 399
+    }
+  ]
+  
