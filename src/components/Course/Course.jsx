@@ -3,10 +3,8 @@ import PropTypes from 'prop-types';
 
 const Course = ({courses, handleAddToBookmark}) => {
     const {image, title, course_details, price, credit} = courses;
-    // console.log(courses);
     return (
         <>
-        {/* <h1>{course.title}</h1> */}
             <div className="card bg-base-100 shadow-xl">
                 <img className="cles h-40 w-5/6 mt-7 m-auto rounded-lg" src={image} alt="Shoes" />
                 <div className="card-body">

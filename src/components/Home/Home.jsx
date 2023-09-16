@@ -10,6 +10,7 @@ const Home = () => {
     const [courses, setCourses] = useState([]);
     const [remaining, setRemaining] = useState(20);
     const [totalCredit, setTotalCredit] = useState(0);
+    const [totalPrice, setTotalPrice] = useState(0);
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -20,12 +21,14 @@ const Home = () => {
     const handleAddToBookmark = (item) => {
         const isExist = addCourses.find((isExistItem) => isExistItem.title == item.title);
         let count = item.credit;
+        let price = item.price;
         if (isExist) {
             toast('You already added this course in cart!!!')
         }
         else {
             addCourses.forEach((item) => {
                 count = count + item.credit
+                price = price + item.price
             })
             const remaining = 20 - count;
             if (count > 20) {
@@ -34,6 +37,7 @@ const Home = () => {
             else {
                 setTotalCredit(count);
                 setRemaining(remaining);
+                setTotalPrice(price);
                 setAddCourses([...addCourses, item])
             }
 
@@ -44,7 +48,6 @@ const Home = () => {
     }
     return (
         <div className="mx-24 pb-12 flex gap-6">
-            {/* {console.log(remaining, totalCredit)} */}
             <ToastContainer className={top}></ToastContainer>
             <div className="w-2/3 card-container grid lg:grid-cols-3 md:grid-cols-2 gap-4">
                 {
@@ -52,7 +55,7 @@ const Home = () => {
                 }
             </div>
             <div className="cart w-1/3">
-                <Cart remaining={remaining} totalCredit={totalCredit} addCourses={addCourses}></Cart>
+                <Cart remaining={remaining} totalCredit={totalCredit} totalPrice={totalPrice} addCourses={addCourses}></Cart>
 
             </div>
         </div>

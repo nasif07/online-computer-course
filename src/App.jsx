@@ -9,9 +9,8 @@ function App() {
       
       <h1 className='text-center text-4xl font-bold py-10'>Course Registration</h1>
       <Home></Home>
-
     </div>
   )
 }
 
-export default App
+export default App;
