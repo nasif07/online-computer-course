@@ -1,8 +1,9 @@
 import { FaBookOpen, FaDollarSign } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 
-const Course = ({course}) => {
-    const {image, title, course_details, price, credit} = course
+const Course = ({courses, handleAddToBookmark}) => {
+    const {image, title, course_details, price, credit} = courses;
+    // console.log(courses);
     return (
         <>
         {/* <h1>{course.title}</h1> */}
@@ -15,7 +16,7 @@ const Course = ({course}) => {
                         <p className='flex items-center gap-3'><FaDollarSign></FaDollarSign> <span className="text-[#1C1B1B99] font-medium text-lg">Price: {price}</span></p>
                         <p className="text-[#1C1B1B99] font-medium text-lg flex items-center gap-3"><FaBookOpen/>Credit: {credit} hr</p>
                     </div>
-                    <button className="btn btn-primary mt-3">Buy Now</button>
+                    <button onClick={() => handleAddToBookmark(courses)} className="btn btn-primary mt-3">Buy Now</button>
                 </div>
             </div>
         </>
@@ -24,7 +25,8 @@ const Course = ({course}) => {
 
 
 Course.propTypes = {
-    course: PropTypes.object.isRequired
+    courses: PropTypes.object.isRequired,
+    handleAddToBookmark: PropTypes.func.isRequired
 }
 
 
